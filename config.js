@@ -3,7 +3,7 @@ window.WEDDING = {
   "side": "bride",
   "audio": "audio/bride.mp3",
   "event": {
-    "countdownTo": "2027-02-11T00:00:00+05:30",
+    "countdownTo": "2027-02-11T17:26:00+05:30",
     "mapQuery": "Adarsha Pally, Banarhat, Jalpaiguri, West Bengal 735202"
   },
   "text": {
@@ -15,13 +15,13 @@ window.WEDDING = {
       "dbMonth": "মাঘ",
       "dbYear": "১৪৩৩",
       "dbGreg": "(ইং ১১ই ফেব্রুয়ারি ২০২৭)",
-      "dbLagna": "শুভ লগ্নের সময় শীঘ্রই জানানো হবে",
+      "dbLagna": "শুভ লগ্ন: সন্ধ্যা ৫টা ২৬ মিঃ গতে<br>রাত্রি ৯টা ১৭ মিঃ মধ্যে",
       "pageTitle": "অভিষেক ও বৈশালী | শুভঃ বিবাহ",
       "letter": "আগামী ২৭শে মাঘ ১৪৩৩, বৃহস্পতিবার (ইংরেজি ১১ই ফেব্রুয়ারি ২০২৭) আমার কন্যা কল্যাণীয়া <strong>বৈশালী</strong>-র সহিত মালবাজার নিবাসী শ্রী রবীন্দ্র নাথ দাস মহাশয়ের পুত্র কল্যাণীয় <strong>অভিষেক</strong>-এর শুভ বিবাহ স্থির হইয়াছে। এই শুভ অনুষ্ঠানে আপনি সবান্ধবে উপস্থিত থাকিয়া নবদম্পতিকে আশীর্বাদ করিলে বাধিত হইব।",
       "hosts": "শ্রী বাবন কর<br>শ্রীমতী শিউলি কর",
       "hostPlace": "আদর্শ পল্লী, বানারহাট",
       "venueEvent": "শুভ বিবাহ ও প্রীতিভোজ",
-      "venueWhen": "২৭শে মাঘ ১৪৩৩, বৃহস্পতিবার",
+      "venueWhen": "২৭শে মাঘ ১৪৩৩, বৃহস্পতিবার<br>লগ্ন: সন্ধ্যা ৫টা ২৬ মিঃ গতে রাত্রি ৯টা ১৭ মিঃ মধ্যে",
       "venueName": "নিজ বাসভবন",
       "venueAddr": "আদর্শ পল্লী, ৩ নং কলোনি,<br>পোঃ বানারহাট, জেলা জলপাইগুড়ি – ৭৩৫২০২"
     },
@@ -33,13 +33,13 @@ window.WEDDING = {
       "dbMonth": "Magh",
       "dbYear": "1433",
       "dbGreg": "(11 February 2027)",
-      "dbLagna": "Lagna time to be announced",
+      "dbLagna": "Lagna: 5:26 pm to 9:17 pm",
       "pageTitle": "Avishek & Baishali | Wedding",
       "letter": "On Thursday, 27 Magh 1433 (11 February 2027), our daughter <strong>Baishali</strong> will be married to <strong>Avishek</strong>, son of Sri Rabindra Nath Das of Malbazar. We would be honoured if you join us with your family and bless the couple.",
       "hosts": "Sri Baban Kar<br>Smt. Shiuli Kar",
       "hostPlace": "Adarsha Pally, Banarhat",
       "venueEvent": "Wedding &amp; dinner",
-      "venueWhen": "Thursday, 11 February 2027",
+      "venueWhen": "Thursday, 11 February 2027<br>Lagna 5:26 pm to 9:17 pm",
       "venueName": "Our residence",
       "venueAddr": "Adarsha Pally, 3rd No. Colony,<br>P.O. Banarhat, Jalpaiguri 735202"
     }
