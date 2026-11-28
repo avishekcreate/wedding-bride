@@ -530,3 +530,6 @@ html[data-theme="groom"] .family-cap{ background:linear-gradient(rgba(91,19,35,.
 html[data-theme="groom"] .family-body{ background:linear-gradient(rgba(91,19,35,.30),rgba(91,19,35,.30)), url(img/theme/velvet.webp) calc(-1.63cqw) calc(-72.29cqw)/260px auto repeat, #5B1323; }
 html[data-theme="bride"] .family-cap{ background:url(img/theme/paper.webp) 0 0/320px auto repeat, #F3E9D5; }
 html[data-theme="bride"] .family-body{ background:url(img/theme/paper.webp) calc(-1.63cqw) calc(-72.29cqw)/320px auto repeat, #F3E9D5; }
+/* date box: texture only, no mandala */
+html[data-theme="bride"] .datebox-face{ background:var(--tex-paper); background-blend-mode:normal; }
+html[data-theme="groom"] .datebox-face{ background:var(--tex-velvet); background-blend-mode:normal; }
