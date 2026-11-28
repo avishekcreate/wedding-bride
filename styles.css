@@ -418,7 +418,7 @@ html[data-theme="bride"] .card{ background:var(--noise), var(--card); }
 html[data-theme="bride"] .occasion{ text-shadow:none; }
 html[data-theme="bride"]{ --page-glow:transparent; }
 /* new couple picture */
-.couple{ aspect-ratio:599/1100; width:min(270px,78%); }
+.couple{ aspect-ratio:603/1100; width:min(270px,78%); }
 /* English date in a Bengali line */
 .venue-when span[lang="en"]{ font-family:"Cormorant Garamond",serif; font-size:1.1em; }
 /* petals & sparkles canvas */
@@ -434,3 +434,26 @@ html[lang="en"] .db-day b{ font-family:"Cormorant Garamond",serif; font-weight:6
   font-size:clamp(66px,20vw,82px); line-height:1; letter-spacing:-.02em; }
 html[lang="en"] .db-day small{ font-family:"Cormorant Garamond",serif; font-style:italic; font-size:clamp(18px,5vw,22px); line-height:1; margin:.2em 0 0 3px; }
 html[lang="en"] .db-year{ font-variant-numeric:lining-nums; font-feature-settings:"lnum" 1; }
+
+/* ---------- Zardozi (bride) and ivory (groom) envelopes ---------- */
+html[data-theme="bride"] .envelope{ aspect-ratio:1.3934; width:min(92vw,420px); }
+html[data-theme="bride"] .env-flap{ height:61.37%; }
+html[data-theme="bride"] .env-flap-back{ clip-path:polygon(0 0,100% 0,50.18% 97.97%); }
+html[data-theme="bride"] .seal, html[data-theme="bride"] .seal-flash{ left:50.11%; top:56.39%; width:26.21%; }
+html[data-theme="groom"] .envelope{ aspect-ratio:1.4396; width:min(92vw,420px); }
+html[data-theme="groom"] .env-flap{ height:72.42%; }
+html[data-theme="groom"] .env-flap-back{ clip-path:polygon(0 0,100% 0,48.04% 98.36%); }
+html[data-theme="groom"] .seal, html[data-theme="groom"] .seal-flash{ left:49.42%; top:56.77%; width:24.54%; }
+.env-pocket-img{ position:absolute; inset:0; width:100%; height:100%; z-index:3; display:block; pointer-events:none; }
+.env-flap{ filter:drop-shadow(0 3px 4px rgba(40,0,10,.25)); transform-style:preserve-3d; }
+.env-flap-front{ position:absolute; inset:0; width:100%; height:100%; display:block; backface-visibility:hidden; -webkit-backface-visibility:hidden; }
+.env-flap-back{ position:absolute; inset:0; transform:rotateX(180deg); backface-visibility:hidden; -webkit-backface-visibility:hidden; }
+html[data-theme="bride"] .env-flap-back{ background:linear-gradient(#5a0b17,#7a1222); }
+html[data-theme="groom"] .env-flap-back{ background:linear-gradient(#efe2c8,#f8efdc); }
+html[data-theme="bride"] .env-back{ background:linear-gradient(#4a0812,#6d0f1f); }
+html[data-theme="groom"] .env-back{ background:linear-gradient(#e9dbbf,#f6ecd8); }
+.env-back{ border-radius:4px; box-shadow:0 22px 50px rgba(20,0,6,.4); }
+.seal{ aspect-ratio:1; filter:drop-shadow(0 4px 6px rgba(30,0,8,.35)); }
+.stage::before{ opacity:.08; }
+.env-flap{ filter:none; }
+.env-flap-front{ filter:drop-shadow(0 3px 4px rgba(40,0,10,.25)); }
