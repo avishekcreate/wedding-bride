@@ -12,3 +12,7 @@ Edit `config.js` (e.g. `eventTime` once the lagna is fixed, and `countdownTo`), 
 
 ## Hosting
 Live at https://wedding-bride.avishek-create.workers.dev/ (Cloudflare Workers, static assets, auto-deploys from `main`).
+
+## Design backup
+The previous design (before the zardozi/ivory page restyle, 28 Nov 2026) is saved on the `classic-design` branch.
+To go back: on GitHub, open the `classic-design` branch and merge it into `main` (or ask Claude to restore it).

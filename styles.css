@@ -457,3 +457,50 @@ html[data-theme="groom"] .env-back{ background:linear-gradient(#e9dbbf,#f6ecd8);
 .stage::before{ opacity:.08; }
 .env-flap{ filter:none; }
 .env-flap-front{ filter:drop-shadow(0 3px 4px rgba(40,0,10,.25)); }
+
+/* =====================================================================
+   Zardozi (bride) and ivory (groom) page dressing — background only.
+   To go back: restore src_backup_classic or the classic-design branch.
+   ===================================================================== */
+.tv{ position:absolute; top:-10px; width:130px; height:210px; z-index:0; pointer-events:none; background:center top/contain no-repeat; }
+.tv-l{ left:-34px; } .tv-r{ right:-34px; transform:scaleX(-1); }
+.invocation, .rituals, .venue{ position:relative; }
+.invocation > *:not(.tv), .rituals > *:not(.tv), .venue > *:not(.tv){ position:relative; z-index:1; }
+.lotus-band{ height:46px; margin:0 -10px -24px; background:center/auto 100% repeat-x; }
+
+/* ---------- Bride: burgundy velvet with gold zardozi ---------- */
+html[data-theme="bride"] .card{
+  background:
+    radial-gradient(120% 60% at 50% 0%, rgba(255,200,120,.07), transparent 60%),
+    linear-gradient(rgba(70,6,16,.25), rgba(70,6,16,.25)),
+    url(img/theme/velvet.webp) 0 0/260px auto repeat, var(--card); }
+html[data-theme="bride"] .rail{ width:12px; background:url(img/theme/z-beads-v.webp) center top/12px auto repeat-y; opacity:1;
+  box-shadow:inset 1px 0 0 rgba(232,205,134,.5), inset -1px 0 0 rgba(232,205,134,.5); }
+html[data-theme="bride"] .rail-l{ left:9px; } html[data-theme="bride"] .rail-r{ right:9px; }
+html[data-theme="bride"] .tv{ background-image:url(img/theme/z-vine.webp); opacity:.55; }
+html[data-theme="bride"] .alpona-band{ display:none; }
+html[data-theme="bride"] .lotus-band{ background-image:url(img/theme/z-lotus.webp); }
+html[data-theme="bride"] .datebox{ box-shadow:0 0 0 3px var(--card), 0 0 0 4px #E8CD86, 0 0 0 6px #8C6420, 0 0 0 7px #E8CD86, 0 18px 34px rgba(20,0,6,.4); }
+html[data-theme="bride"] .map{ box-shadow:0 0 0 2px #E8CD86, 0 0 0 5px #6d0f1f, 0 0 0 6px #C9A04E, 0 0 0 8px #E8CD86; }
+html[data-theme="bride"] #wishForm input, html[data-theme="bride"] #wishForm textarea{
+  background:linear-gradient(135deg,#F7ECD8,#EAD6B2); color:#3A0B16; border:1px dashed #A57A2C;
+  box-shadow:0 0 0 3px rgba(232,205,134,.25); }
+html[data-theme="bride"] .kantha::before{ --st:#E8CD86; }
+
+/* ---------- Groom: ivory paper, blind emboss, gold foil ---------- */
+html[data-theme="groom"] .card{
+  background:
+    radial-gradient(120% 60% at 50% 0%, rgba(255,255,255,.35), transparent 60%),
+    url(img/theme/paper.webp) 0 0/320px auto repeat, var(--card); }
+html[data-theme="groom"] .rail{ width:10px; background:none; opacity:1;
+  border-left:1.5px solid #C9A04E; border-right:1px solid rgba(201,160,78,.55); }
+html[data-theme="groom"] .rail-r{ transform:none; }
+html[data-theme="groom"] .tv{ background-image:url(img/theme/i-vine.webp); opacity:.9; }
+html[data-theme="groom"] .alpona-band{ display:none; }
+html[data-theme="groom"] .lotus-band{ background-image:url(img/theme/i-lotus.webp); }
+html[data-theme="groom"] .datebox{ box-shadow:0 0 0 3px var(--card), 0 0 0 4px #C9A04E, 0 0 0 7px var(--card), 0 0 0 8px rgba(201,160,78,.7), 0 18px 34px rgba(40,0,10,.25); }
+html[data-theme="groom"] .map{ box-shadow:0 0 0 1.5px #C9A04E, 0 0 0 6px #FBF4E6, 0 0 0 7px rgba(201,160,78,.7); }
+html[data-theme="groom"] #wishForm input, html[data-theme="groom"] #wishForm textarea{
+  background:#FBF5EA; border:1px solid rgba(201,160,78,.8);
+  box-shadow:inset 0 2px 4px rgba(120,80,30,.12), inset 0 -1px 0 rgba(255,255,255,.8); }
+@media (max-width:360px){ .tv{ width:100px; height:160px; } }
