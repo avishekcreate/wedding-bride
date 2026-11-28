@@ -504,3 +504,29 @@ html[data-theme="groom"] #wishForm input, html[data-theme="groom"] #wishForm tex
   background:#FBF5EA; border:1px solid rgba(201,160,78,.8);
   box-shadow:inset 0 2px 4px rgba(120,80,30,.12), inset 0 -1px 0 rgba(255,255,255,.8); }
 @media (max-width:360px){ .tv{ width:100px; height:160px; } }
+
+/* ---------- One texture everywhere: velvet on maroon surfaces, paper on cream ---------- */
+:root{
+  --tex-velvet:linear-gradient(rgba(91,19,35,.30),rgba(91,19,35,.30)), url(img/theme/velvet.webp) 0 0/260px auto repeat, #5B1323;
+  --tex-paper:url(img/theme/paper.webp) 0 0/320px auto repeat, #F3E9D5;
+}
+/* page behind the envelope and around the card */
+html[data-theme="groom"] body{ background:radial-gradient(120% 70% at 50% 30%, rgba(140,40,64,.35), transparent 70%), var(--tex-velvet); background-attachment:fixed; }
+html[data-theme="bride"] body{ background:var(--tex-paper); background-attachment:fixed; }
+/* card that slides out of the envelope */
+html[data-theme="bride"] .env-card{ background:var(--tex-velvet); }
+html[data-theme="groom"] .env-card{ background:var(--tex-paper); }
+/* inside of the envelope and inner side of the flap */
+html[data-theme="bride"] .env-back, html[data-theme="bride"] .env-flap-back{ background:linear-gradient(rgba(40,0,8,.35),rgba(40,0,8,.35)), url(img/theme/velvet.webp) 0 0/260px auto repeat, #4a0812; }
+html[data-theme="groom"] .env-back, html[data-theme="groom"] .env-flap-back{ background:linear-gradient(rgba(150,110,60,.10),rgba(150,110,60,.10)), url(img/theme/paper.webp) 0 0/320px auto repeat, #EADCBE; }
+/* date box face */
+html[data-theme="bride"] .datebox-face{ background:url(img/mandala.webp) center/120% no-repeat, var(--tex-paper); background-blend-mode:soft-light, normal, normal; }
+html[data-theme="groom"] .datebox-face{ background:url(img/mandala.webp) center/120% no-repeat, var(--tex-velvet); background-blend-mode:soft-light, normal, normal, normal; }
+/* family panel: arch top and body share one continuous texture */
+.family{ container-type:inline-size; }
+.family-cap{ width:100%; aspect-ratio:700/506; height:auto;
+  -webkit-mask:url(img/arch-cap-cream.webp) center/100% 100% no-repeat; mask:url(img/arch-cap-cream.webp) center/100% 100% no-repeat; }
+html[data-theme="groom"] .family-cap{ background:linear-gradient(rgba(91,19,35,.30),rgba(91,19,35,.30)), url(img/theme/velvet.webp) 0 0/260px auto repeat, #5B1323; }
+html[data-theme="groom"] .family-body{ background:linear-gradient(rgba(91,19,35,.30),rgba(91,19,35,.30)), url(img/theme/velvet.webp) calc(-1.63cqw) calc(-72.29cqw)/260px auto repeat, #5B1323; }
+html[data-theme="bride"] .family-cap{ background:url(img/theme/paper.webp) 0 0/320px auto repeat, #F3E9D5; }
+html[data-theme="bride"] .family-body{ background:url(img/theme/paper.webp) calc(-1.63cqw) calc(-72.29cqw)/320px auto repeat, #F3E9D5; }
