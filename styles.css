@@ -438,11 +438,11 @@ html[lang="en"] .db-year{ font-variant-numeric:lining-nums; font-feature-setting
 /* ---------- Zardozi (bride) and ivory (groom) envelopes ---------- */
 html[data-theme="bride"] .envelope{ aspect-ratio:1.3934; width:min(92vw,420px); }
 html[data-theme="bride"] .env-flap{ height:61.37%; }
-html[data-theme="bride"] .env-flap-back{ clip-path:polygon(0 0,100% 0,50.18% 97.97%); }
+html[data-theme="bride"] .env-flap-back{ clip-path:polygon(0 100%,100% 100%,50.18% 2.03%); }
 html[data-theme="bride"] .seal, html[data-theme="bride"] .seal-flash{ left:50.11%; top:56.39%; width:26.21%; }
 html[data-theme="groom"] .envelope{ aspect-ratio:1.4396; width:min(92vw,420px); }
 html[data-theme="groom"] .env-flap{ height:72.42%; }
-html[data-theme="groom"] .env-flap-back{ clip-path:polygon(0 0,100% 0,48.04% 98.36%); }
+html[data-theme="groom"] .env-flap-back{ clip-path:polygon(0 100%,100% 100%,48.04% 1.64%); }
 html[data-theme="groom"] .seal, html[data-theme="groom"] .seal-flash{ left:49.42%; top:56.77%; width:24.54%; }
 .env-pocket-img{ position:absolute; inset:0; width:100%; height:100%; z-index:3; display:block; pointer-events:none; }
 .env-flap{ filter:drop-shadow(0 3px 4px rgba(40,0,10,.25)); transform-style:preserve-3d; }
@@ -457,3 +457,7 @@ html[data-theme="groom"] .env-back{ background:linear-gradient(#e9dbbf,#f6ecd8);
 .stage::before{ opacity:.08; }
 .env-flap{ filter:none; }
 .env-flap-front{ filter:drop-shadow(0 3px 4px rgba(40,0,10,.25)); }
+.seal-patch{ position:absolute; z-index:5; transform:translate(-50%,-50%); aspect-ratio:1; pointer-events:none; transition:opacity .25s ease; }
+.envelope.is-opening .seal-patch{ opacity:0; }
+html[data-theme="bride"] .seal-patch{ left:50.11%; top:56.39%; width:49.68%; }
+html[data-theme="groom"] .seal-patch{ left:49.42%; top:56.77%; width:46.63%; }
