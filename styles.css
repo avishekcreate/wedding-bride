@@ -436,14 +436,14 @@ html[lang="en"] .db-day small{ font-family:"Cormorant Garamond",serif; font-styl
 html[lang="en"] .db-year{ font-variant-numeric:lining-nums; font-feature-settings:"lnum" 1; }
 
 /* ---------- Zardozi (bride) and ivory (groom) envelopes ---------- */
-html[data-theme="bride"] .envelope{ aspect-ratio:1.3934; width:min(92vw,420px); }
-html[data-theme="bride"] .env-flap{ height:61.37%; }
-html[data-theme="bride"] .env-flap-back{ clip-path:polygon(0 100%,100% 100%,50.18% 2.03%); }
-html[data-theme="bride"] .seal, html[data-theme="bride"] .seal-flash{ left:50.11%; top:56.39%; width:26.21%; }
-html[data-theme="groom"] .envelope{ aspect-ratio:1.4396; width:min(92vw,420px); }
-html[data-theme="groom"] .env-flap{ height:72.42%; }
-html[data-theme="groom"] .env-flap-back{ clip-path:polygon(0 100%,100% 100%,48.04% 1.64%); }
-html[data-theme="groom"] .seal, html[data-theme="groom"] .seal-flash{ left:49.42%; top:56.77%; width:24.54%; }
+html[data-theme="bride"] .envelope{ aspect-ratio:1.4037; width:min(92vw,420px); }
+html[data-theme="bride"] .env-flap{ height:62.17%; }
+html[data-theme="bride"] .env-flap-back{ clip-path:polygon(0 100%,100% 100%,49.99% 1.55%); }
+html[data-theme="bride"] .seal, html[data-theme="bride"] .seal-flash{ left:49.99%; top:57.47%; width:26.21%; }
+html[data-theme="groom"] .envelope{ aspect-ratio:1.4411; width:min(92vw,420px); }
+html[data-theme="groom"] .env-flap{ height:70.43%; }
+html[data-theme="groom"] .env-flap-back{ clip-path:polygon(0 100%,100% 100%,49.75% 1.34%); }
+html[data-theme="groom"] .seal, html[data-theme="groom"] .seal-flash{ left:49.75%; top:55.03%; width:24.54%; }
 .env-pocket-img{ position:absolute; inset:0; width:100%; height:100%; z-index:3; display:block; pointer-events:none; }
 .env-flap{ filter:drop-shadow(0 3px 4px rgba(40,0,10,.25)); transform-style:preserve-3d; }
 .env-flap-front{ position:absolute; inset:0; width:100%; height:100%; display:block; backface-visibility:hidden; -webkit-backface-visibility:hidden; }
@@ -457,7 +457,3 @@ html[data-theme="groom"] .env-back{ background:linear-gradient(#e9dbbf,#f6ecd8);
 .stage::before{ opacity:.08; }
 .env-flap{ filter:none; }
 .env-flap-front{ filter:drop-shadow(0 3px 4px rgba(40,0,10,.25)); }
-.seal-patch{ position:absolute; z-index:5; transform:translate(-50%,-50%); aspect-ratio:1; pointer-events:none; transition:opacity .25s ease; }
-.envelope.is-opening .seal-patch{ opacity:0; }
-html[data-theme="bride"] .seal-patch{ left:50.11%; top:56.39%; width:49.68%; }
-html[data-theme="groom"] .seal-patch{ left:49.42%; top:56.77%; width:46.63%; }
